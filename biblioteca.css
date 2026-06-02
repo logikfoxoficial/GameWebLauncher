@@ -1,0 +1,25 @@
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.card {
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    border-color: #00a86b;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.btn-success {
+    background-color: #00a86b;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #007a55;
+}

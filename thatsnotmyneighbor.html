@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>GameWebLauncher - Player</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #111;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 2px solid #00a86b;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8em;
+            color: #00a86b;
+        }
+
+        .game-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+        }
+
+        iframe {
+            width: 90%;
+            height: 90%;
+            border: 3px solid #00a86b;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 168, 107, 0.6);
+            background-color: #000;
+        }
+
+        footer {
+            background-color: #111;
+            text-align: center;
+            padding: 10px;
+            border-top: 2px solid #00a86b;
+            font-size: 0.9em;
+            color: #aaa;
+        }
+
+        /* Botão de voltar */
+        .back-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #00a86b;
+            color: #fff;
+            border: none;
+            padding: 8px 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+
+        .back-btn:hover {
+            background-color: #007a55;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GameWebLauncher - Player</h1>
+        <h3>That's Not My Neighbor</h3>
+    </header>
+
+    <button class="back-btn" onclick="window.location.href='biblioteca.html'">← Voltar</button>
+
+    <div class="game-container">
+        <iframe src="https://thatsnotmyneighbor.org/" allowfullscreen></iframe>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 GameWebLauncher - Todos os direitos reservados a LogikFox</p>
+    </footer>
+</body>
+</html>
